@@ -22,9 +22,9 @@ gulp.task('cssmin', gulp.parallel('compressCSS'));
 gulp.task('clean:minJS', gulp.parallel('clean:minJS'));
 gulp.task('compress', gulp.series('minify', 'clean:minJS', 'htmlmin', 'cssmin'));
 gulp.task('transform-css', gulp.series('scss'));
-
+gulp.task("package", gulp.series("zip"));
 gulp.task('default', gulp.series('clean', gulp.parallel('transform-css', 'copy:build')));
 
 gulp.task('start', gulp.series('default', 'serve', 'watch'));
 gulp.task('serve', gulp.series('serve', 'watch'));
-gulp.task('deploy', gulp.series('default', 'compress'));
+gulp.task('deploy', gulp.series('default', 'compress','package'));

@@ -6,6 +6,10 @@
     "temp": "./.tmp",
     "scss": "./app/scss"
   },
+  "package": {
+    "path": "./build",
+    "name": "production.zip"
+  },
   "buildExts": "js,css",
   "vendor" : {
     "name" : "vendor",

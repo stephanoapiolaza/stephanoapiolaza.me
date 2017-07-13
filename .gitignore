@@ -1,6 +1,10 @@
-# -- Editores -----------------------------------------
+# production
+build/
+
 # npm
 node_modules/
+
+# -- Editores -----------------------------------------
 
 # bower
 bower_install/

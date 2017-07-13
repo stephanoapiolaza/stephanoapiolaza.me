@@ -12,14 +12,13 @@
     "start": "gulp start",
     "test": "gulp test"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "browser-sync": "~2.18.12",
     "del": "~3.0.0",
     "gulp": "gulpjs/gulp#4.0",
     "gulp-changed": "~3.1.0",
-    "gulp-clean-css": "^2.0.13",
+    "gulp-clean-css": "^3.6.0",
     "gulp-concat": "^2.6.1",
     "gulp-htmlmin": "^3.0.0",
     "gulp-minify": "0.0.14",
