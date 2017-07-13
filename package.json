@@ -1,0 +1,41 @@
+{
+  "name": "stephanoapiolaza.me",
+  "version": "0.5.0",
+  "private": false,
+  "license": "MIT",
+  "author": "Stephano Apiolaza",
+  "url": "stephanoapiolaza.me",
+  "email": "contacto@stephanoapiolaza.me",
+  "scripts": {
+    "clean": "gulp clean",
+    "build": "gulp",
+    "start": "gulp start",
+    "test": "gulp test"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "browser-sync": "~2.18.12",
+    "del": "~3.0.0",
+    "gulp": "gulpjs/gulp#4.0",
+    "gulp-changed": "~3.1.0",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-minify": "0.0.14",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-stylus": "^2.6.0",
+    "gulp-tslint": "^8.1.1",
+    "gulp-typescript": "^3.1.7",
+    "gulp-uglify": "^3.0.0",
+    "gulp-war": "^0.1.4",
+    "gulp-zip": "^3.2.0",
+    "merge-stream": "^1.0.1",
+    "require-directory": "^2.1.1",
+    "superstatic": "~4.1.0",
+    "yargs": "~4.8.1"
+  }
+}
