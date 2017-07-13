@@ -16,6 +16,7 @@ loadGulpTasks({path: './gulp-tasks', arguments: [config], gulp});
 
 gulp.task('clean', gulp.parallel('clean'));
 gulp.task('scss', gulp.parallel('sass'));
+gulp.task('lint', gulp.parallel('jsLint'));
 gulp.task('minify', gulp.parallel('compressJS'));
 gulp.task('htmlmin', gulp.parallel('compressHTML'));
 gulp.task('cssmin', gulp.parallel('compressCSS'));

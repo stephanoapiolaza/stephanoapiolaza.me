@@ -4,7 +4,8 @@
     "build": "./build",
     "buildCss": "./build/css",
     "temp": "./.tmp",
-    "scss": "./app/scss"
+    "scss": "./app/scss",
+    "js": "./app/js"
   },
   "package": {
     "path": "./build",
