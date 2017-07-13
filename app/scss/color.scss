@@ -13,15 +13,30 @@
 $accent-color: #0575e6;
 $active-bg: #cde3fa;
 $active-bg-2: #0b65bf;
-$text-color: #252525;
+$box-shadow-rgba-accent: rgba($accent-color, 0.2);
+$box-shadow-rgba-hide: rgba(#000, 0.1); // sass-lint:disable-line no-color-literals
+$box-shadow-btn-white: rgba(37, 37, 37, 0.2);
+$border-color-spinner: #222;
+$border-top-color-spinner: #ccc;
+$border-top-contacts-section: #e5e5e5;
+$border-white: #e3e3e3;
+$color-error-validation: #f77482;
+$color-success-validation: #49bb7b;
+$empty-color: #fff;
+$empty-color-rgba: rgba(255, 255, 255, 0);
 $scroll-color: #3a7bd5;
+$scroll-color-active: #366ab2;
+$text-color: #252525;
+$footer-color: #efefef;
 
 body {
   color: $text-color;
 }
 
-#page-preloader .spinner:before {
-  border-top-color: $accent-color;
+#page-preloader {
+  .spinner:before {
+    border-top-color: $accent-color;
+  }
 }
 
 .header {
@@ -43,8 +58,8 @@ body {
   }
 
   &.header-not-home {
+    background: $empty-color;
     color: $text-color;
-    background: #fff;
 
     .mobile-btn > div {
       background: $accent-color;
@@ -52,7 +67,11 @@ body {
   }
 }
 
-.first-screen, .mob-menu-wrapper {
+.first-screen {
+  background: $accent-color;
+}
+
+.mob-menu-wrapper {
   background: $accent-color;
 }
 
@@ -68,7 +87,11 @@ body {
 .btn-theme-white {
   color: $accent-color;
 
-  &:hover, &:focus {
+  &:hover {
+    color: $accent-color;
+  }
+
+  &:focus {
     color: $accent-color;
   }
 
@@ -93,12 +116,12 @@ body {
   background: $accent-color;
 
   &:hover {
-    box-shadow: 0 10px 20px 0 rgba($accent-color, 0.2);
+    box-shadow: 0 10px 20px 0 $box-shadow-rgba-accent;
   }
 
   &:active {
     background: $active-bg-2;
-    box-shadow: 0 10px 20px 0 rgba($accent-color, 0.2);
+    box-shadow: 0 10px 20px 0 $box-shadow-rgba-accent;
   }
 }
 
@@ -113,14 +136,14 @@ body {
 
   &:hover {
     background: $accent-color;
-    color: #fff;
-    box-shadow: 0 10px 20px 0 rgba($accent-color, 0.2);
+    box-shadow: 0 10px 20px 0 $box-shadow-rgba-accent;
+    color: $empty-color;
   }
 
   &:active {
     background: $active-bg-2;
-    box-shadow: 0 10px 20px 0 rgba($accent-color, 0.2);
     border-color: $active-bg-2;
+    box-shadow: 0 10px 20px 0 $box-shadow-rgba-accent;
   }
 }
 
@@ -132,18 +155,13 @@ body {
 }
 
 .projects-filter {
+  ul li {
+    &.active {
+      color: $accent-color;
+    }
 
-  ul {
-
-    li {
-
-      &.active {
-        color: $accent-color;
-      }
-
-      &:hover {
-        color: $accent-color;
-      }
+    &:hover {
+      color: $accent-color;
     }
   }
 }
@@ -159,37 +177,38 @@ body {
     @at-root
     .site-input {
       &:hover, &:focus {
-        border-color: $accent-color!important;
-        box-shadow: 0 10px 20px 0 rgba($accent-color, 0.2);
-        border-right: 3px solid $accent-color!important;
-        border-left: 3px solid $accent-color!important;
+        border-color: $accent-color !important;
+        border-left: 3px solid $accent-color !important;
+        border-right: 3px solid $accent-color !important;
+        box-shadow: 0 10px 20px 0 $box-shadow-rgba-accent;
       }
     }
 
     &.warning, &.error {
 
       .help-block {
-        color: #f77482;
+        color: $color-error-validation;
       }
 
       .site-input {
-        border-color: #fff;
-        border-top-color: #f77482;
-        border-left-color: #fff;
-        border-right-color: #fff;
+        border-color: $empty-color;
+        border-left-color: $empty-color;
+        border-right-color: $empty-color;
+        border-top-color: $color-error-validation;
       }
     }
 
     &.success {
 
       .help-block-success {
-        color: #49bb7b;
+        color: $color-success-validation;
       }
+
       .site-input {
-        border-color: #fff;
-        border-top-color: #49bb7b;
-        border-left-color: #fff;
-        border-right-color: #fff;
+        border-color: $empty-color;
+        border-left-color: $empty-color;
+        border-right-color: $empty-color;
+        border-top-color: $color-success-validation;
       }
     }
   }
@@ -198,12 +217,17 @@ body {
 
 .contacts-section, .modal-body {
   .about-me-info {
+
     .info-row {
+
       .fa {
+
         &:hover {
+
           color: $accent-color;
           opacity: 1;
         }
+
         &:active {
           color: $active-bg-2;
           opacity: 1;
@@ -228,37 +252,12 @@ body {
         color: $accent-color;
         opacity: 1;
       }
+
       &:active {
         color: $active-bg-2;
         opacity: 1;
       }
     }
-  }
-}
-
-.highcharts-xaxis-labels, .highcharts-yaxis-labels {
-  text {
-    color: $text-color!important;
-    fill: $text-color!important;
-    opacity: 0.8;
-  }
-}
-
-.highcharts-color-0 {
-  rect {
-    fill: #26a0da;
-  }
-}
-.highcharts-color-1 {
-  rect {
-    fill: $accent-color;
-  }
-}
-
-.highcharts-legend-item {
-  text {
-    color: $text-color!important;
-    fill: $text-color!important;
   }
 }
 
@@ -268,11 +267,12 @@ body {
 
 .mCS-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
   background: $scroll-color;
-  box-shadow: 0 10px 20px 0 rgba($accent-color, 0.2);
+  box-shadow: 0 10px 20px 0 $box-shadow-rgba-accent;
 }
+
 .mCS-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
-  background: #366ab2;
-  box-shadow: 0 10px 20px 0 rgba($accent-color, 0.2);
+  background: $scroll-color-active;
+  box-shadow: 0 10px 20px 0 $box-shadow-rgba-accent;
 }
 
 .mCS-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {

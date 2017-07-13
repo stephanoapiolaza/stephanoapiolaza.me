@@ -6,15 +6,12 @@ Version:    1.1
 Author:        Andrey Sokoltsov
 Profile:    http://themeforest.net/user/andreysokoltsov
 -------------------------------------------------------------------*/
-
 /* Fonts */
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
 @import url("../assets/material-design-icons/materialdesignicons.min.css");
-
 /* PLUGIN CSS */
 @import url("../assets/jquery.mCustomScrollbar/jquery.mCustomScrollbar.css");
-
 /* MAIN CSS */
 @import url("../assets/bootstrap/bootstrap.min.css");
 @import url("typography.css");

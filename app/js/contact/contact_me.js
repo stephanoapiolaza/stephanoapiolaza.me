@@ -1,41 +1,43 @@
-$(document).ready(function(){
+'use strict';
+$(document).ready(function () {
 
   $("input,select,textarea").not("[type=submit]").jqBootstrapValidation({
     preventSubmit: true,
-    submitError: function($form, event, errors) {},
-    submitSuccess: function($form, event) {
+    submitError: function ($form, event, errors) {
+    },
+    submitSuccess: function ($form, event) {
       event.preventDefault(); // prevent default submit behaviour
       prepareEmail($form, event);
     },
-    filter: function() {
+    filter: function () {
       return $(this).is(":visible");
     }
   });
 
   /*
-  $('#contact-form').on('submit', function(e){
-    sendEmail($(this).serialize(), false);
-    return false;
-  });
+   $('#contact-form').on('submit', function(e){
+   sendEmail($(this).serialize(), false);
+   return false;
+   });
 
-  $('#modal-form').on('submit','hide.bs.modal',function(e){
-    return false;
-  });*/
+   $('#modal-form').on('submit','hide.bs.modal',function(e){
+   return false;
+   });*/
 
   /*When clicking on Full hide fail/success boxes */
-  $('#form-first-name').focus(function() {
+  $('#form-first-name').focus(function () {
     $('#success').html('');
   });
 
 });
 
-function prepareEmail(form, event){
+function prepareEmail(form, event) {
   // get values from FORM
   var thisForm = event.target.getAttribute('id');
   var name = $('#' + thisForm).find("input.name-input").val();
   var email = $('#' + thisForm).find("input.email-input").val();
   var message = $('#' + thisForm).find("textarea.textarea").val();
-  sendEmail(new Email(email,name,message), thisForm);
+  sendEmail(new Email(email, name, message), thisForm);
 }
 
 /**
@@ -43,7 +45,7 @@ function prepareEmail(form, event){
  * @param values to send
  * @param isModal to case true close modal
  */
-function sendEmail(values, idForm){
+function sendEmail(values, idForm) {
   // TODO: add error behavior with modal
   $.ajax({
     url: "././mail/contact_me.php",
@@ -56,13 +58,13 @@ function sendEmail(values, idForm){
     },
     cache: false,
     beforeSend: function () {
-      $('input[type=submit]').attr("disabled","disabled");
+      $('input[type=submit]').attr("disabled", "disabled");
     },
     success: function (data) {
-      if(data.error){
+      if (data.error) {
         console.error('error');
       }
-      else if(data.success){
+      else if (data.success) {
         // Success message
         $('#send-message-modal').modal();
         cleanForm(idForm);
@@ -79,7 +81,7 @@ function sendEmail(values, idForm){
  * Clean Form after to send an email
  * @param idForm
  */
-function cleanForm(idForm){
+function cleanForm(idForm) {
   $('#' + idForm).trigger("reset");
   $('#' + idForm).find('.form-group').removeClass('success');
 }
@@ -91,11 +93,11 @@ function cleanForm(idForm){
  * @param message
  * @constructor
  */
-function Email(email, name, message){
+function Email(email, name, message) {
   this.email = email;
   this.name = name;
   this.message = message;
-  this.toString = function(){
+  this.toString = function () {
     console.log(this);
-  }
+  };
 }

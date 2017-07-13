@@ -14,7 +14,7 @@
 -------------------------------------------------------------------*/
 
 /* Media max-height */
-@media screen and (max-height: 670px){
+@media screen and (max-height: 670px) {
 
   .first-screen-box {
     .about-me-info {
@@ -24,7 +24,7 @@
 
 }
 
-@media screen and (max-height: 530px){
+@media screen and (max-height: 530px) {
 
   .first-screen-box {
     .main-avatar {
@@ -34,7 +34,7 @@
 
 }
 
-@media screen and (max-height: 400px){
+@media screen and (max-height: 400px) {
 
   .first-screen-box {
     .about-me .opacity-box {
@@ -43,11 +43,11 @@
   }
 
 }
+
 /* Media max-height */
 
-
 /* Media max-width */
-@media screen and (max-width: 1199px){
+@media screen and (max-width: 1199px) {
 
   .sidebar-form {
     width: 293px;
@@ -55,24 +55,24 @@
 
   .project-info-line .info-line {
     display: block;
-    margin-right: 0;
     margin-bottom: 10px;
+    margin-right: 0;
 
     .span-title {
-      width: 85px;
-      margin-right: 0;
       float: left;
+      margin-right: 0;
+      width: 85px;
 
       & + span {
-        padding-left: 85px;
         display: block;
+        padding-left: 85px;
       }
     }
   }
 
 }
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 991px) {
 
   .container {
     padding: 0 30px;
@@ -101,16 +101,16 @@
   }
 
   .first-screen-box {
-    text-align: center;
-    padding: 0 30px;
-    width: 100%;
-    left: 0;
     bottom: 30px;
+    left: 0;
+    padding: 0 30px;
+    text-align: center;
+    width: 100%;
 
     .about-title {
       display: inline-block;
-      vertical-align: top;
       margin-bottom: 1px;
+      vertical-align: top;
     }
 
     .site-btn {
@@ -120,8 +120,8 @@
 
   .main-avatar {
     display: inline-block;
-    vertical-align: top;
     margin-bottom: 20px;
+    vertical-align: top;
   }
 
   .form-wrapper {
@@ -138,7 +138,7 @@
     padding: 28px 0 30px;
   }
 
-  @media screen and (max-height: 530px){
+  @media screen and (max-height: 530px) {
 
     .first-screen-box {
       .main-avatar {
@@ -148,7 +148,7 @@
 
   }
 
-  @media screen and (max-height: 450px){
+  @media screen and (max-height: 450px) {
 
     .first-screen-box {
       .main-avatar {
@@ -158,7 +158,7 @@
 
   }
 
-  @media screen and (max-height: 400px){
+  @media screen and (max-height: 400px) {
 
     .first-screen-box {
       .about-me .opacity-box {
@@ -168,7 +168,7 @@
 
   }
 
-  @media screen and (max-height: 330px){
+  @media screen and (max-height: 330px) {
 
     .first-screen-box {
       .about-me .opacity-box {
@@ -180,17 +180,17 @@
 
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
 
   .modal-dialog {
     margin: 15px auto;
-    width: 100%;
     max-width: 650px;
+    width: 100%;
   }
 
   .modal {
-    padding-left: 15px!important;
-    padding-right: 15px!important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
 
   .modal-body {
@@ -202,8 +202,8 @@
 
     .site-btn {
       display: block;
-      width: 170px;
       margin: 0 auto 30px;
+      width: 170px;
 
       &:last-child {
         margin-bottom: 0;
@@ -219,7 +219,7 @@
     padding: 20px 0;
   }
 
-  @media screen and (max-height: 530px){
+  @media screen and (max-height: 530px) {
 
     .first-screen-box {
       .main-avatar {
@@ -229,7 +229,7 @@
 
   }
 
-  @media screen and (max-height: 485px){
+  @media screen and (max-height: 485px) {
 
     .first-screen-box {
       .main-avatar {
@@ -239,7 +239,7 @@
 
   }
 
-  @media screen and (max-height: 380px){
+  @media screen and (max-height: 380px) {
 
     .first-screen-box {
       .about-me .opacity-box {
@@ -251,9 +251,9 @@
 
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
 
-  @media screen and (max-height: 570px){
+  @media screen and (max-height: 570px) {
 
     .first-screen-box {
       .main-avatar {
@@ -263,7 +263,7 @@
 
   }
 
-  @media screen and (max-height: 450px){
+  @media screen and (max-height: 450px) {
 
     .first-screen-box {
       .about-me .opacity-box {
@@ -275,9 +275,9 @@
 
 }
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 360px) {
 
-  @media screen and (max-height: 620px){
+  @media screen and (max-height: 620px) {
 
     .first-screen-box {
       .main-avatar {
@@ -287,7 +287,7 @@
 
   }
 
-  @media screen and (max-height: 500px){
+  @media screen and (max-height: 500px) {
 
     .first-screen-box {
       .about-me .opacity-box {
@@ -298,4 +298,5 @@
   }
 
 }
+
 /* Media max-width */

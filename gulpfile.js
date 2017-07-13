@@ -16,7 +16,7 @@ loadGulpTasks({path: './gulp-tasks', arguments: [config], gulp});
 
 gulp.task('clean', gulp.parallel('clean'));
 gulp.task('scss', gulp.parallel('sass'));
-gulp.task('lint', gulp.parallel('jsLint'));
+gulp.task('lint', gulp.parallel('jsLint','cssLint'));
 gulp.task('minify', gulp.parallel('compressJS'));
 gulp.task('htmlmin', gulp.parallel('compressHTML'));
 gulp.task('cssmin', gulp.parallel('compressCSS'));
@@ -26,6 +26,6 @@ gulp.task('transform-css', gulp.series('scss'));
 gulp.task("package", gulp.series("zip"));
 gulp.task('default', gulp.series('clean', gulp.parallel('transform-css', 'copy:build')));
 
-gulp.task('start', gulp.series('default', 'serve', 'watch'));
+gulp.task('start', gulp.series('default', 'lint', 'serve', 'watch'));
 gulp.task('serve', gulp.series('serve', 'watch'));
-gulp.task('deploy', gulp.series('default', 'compress','package'));
+gulp.task('deploy', gulp.series('default', 'lint', 'compress','package'));
