@@ -1,3 +1,10 @@
+# 0.9.1(14-07-2017)
+
+### Features
+
+* **size**: add size output console thanks to gulp-size.
+* **minifies**: add gulp-size to the streams
+
 # 0.8.1(13-07-2017)
 
 ### Features
