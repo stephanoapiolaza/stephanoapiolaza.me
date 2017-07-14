@@ -1,3 +1,9 @@
+# 0.10.0(14-07-2017)
+
+### Features
+
+* **minify**: add gulp-imagemin to imagemin optimizer.
+
 # 0.9.1(14-07-2017)
 
 ### Features

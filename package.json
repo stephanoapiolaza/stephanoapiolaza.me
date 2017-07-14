@@ -1,6 +1,6 @@
 {
   "name": "stephanoapiolaza.me",
-  "version": "0.9.1",
+  "version": "0.10.0",
   "private": false,
   "license": "MIT",
   "author": "Stephano Apiolaza",
@@ -22,6 +22,7 @@
     "gulp-clean-css": "^3.6.0",
     "gulp-concat": "^2.6.1",
     "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.3.0",
     "gulp-jshint": "^2.0.4",
     "gulp-minify": "0.0.14",
     "gulp-notify": "^2.2.0",
