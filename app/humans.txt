@@ -1,0 +1,14 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+  Stephano Apiolaza -- Webmaster -- github https://github.com/stephanoapiolaza/
+
+# THANKS
+
+  Stephano Apiolaza look for in github https://github.com/stephanoapiolaza/ or send me an email contacto@stephanoapiolaza.me
+
+# TECHNOLOGY COLOPHON
+
+  HTML5, CSS3, SASS, GULP, NODE.JS,

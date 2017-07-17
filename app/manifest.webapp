@@ -1,0 +1,29 @@
+{
+  "version": "0.12.0",
+  "name": "stephanoapiolaza.me",
+  "launch_path": "/index.html",
+  "description": "Stephano Apiolaza Portfolio to meet me.",
+  "icons": {
+    "128": "/media/icons/apple-icon-120x120.png"
+  },
+  "developer": {
+    "name": "Stephano Apiolaza",
+    "url": "http://stephanoapiolaza.me"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "es",
+  "permissions": {
+  },
+  "locales": {
+    "en": {
+      "name": "stephanoapiolaza.me",
+      "description": "Stephano Apiolaza Portfolio to meet me."
+    },
+    "es": {
+      "name": "stephanoapiolaza.me",
+      "description": "Portafolio Stephano Apiolaza, debatamos ideas"
+    }
+  }
+}

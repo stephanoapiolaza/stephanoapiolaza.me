@@ -2,14 +2,56 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Stephano Apiolaza"/>
   <meta name="description"
         content="Sitio Web Personal, necesitas desarrollar algo y quieres dejarlo en las mejores manos. Contactame"/>
   <meta name="keywords"
         content="stephano, apiolaza, cv, curriculum, movil, idea, emprendimiento, startup, necesito, web, angular, angularjs, java, javascript, spring, tecnologia, tecnologico, php, python, laravel, react, preact, redux, ruby, wordpress, prestashop, woocommerce, gantry"/>
-  <title>Stephano Apiolaza - Haz tu idea tecnologica una realidad</title>
+  <title>Stephano Apiolaza - Debatamos ideas</title>
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- Web Application Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Web Starter Kit">
+  <link rel="icon" sizes="192x192" href="media/icons/android-icon-192x192.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+  <link rel="apple-touch-icon" sizes="57x57" href="media/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="media/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="media/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="media/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="media/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="media/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="media/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="media/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="media/icons/apple-icon-180x180.png">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="media/icons/ms-icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#2F3BA2">
+
+  <!-- favicon -->
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="icon" type="image/png" sizes="32x32" href="media/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="media/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="media/icons/favicon-16x16.png">
+
+  <!-- Color the status bar on mobile devices -->
+  <meta name="theme-color" content="#2F3BA2">
+
+  <!-- humans look http://humanstxt.org/ -->
+  <link type="text/plain" rel="author" href="http://stephanoapiolaza.me/humans.txt"/>
+
   <link rel="stylesheet" type="text/css" href="css/master.css"/>
 
 </head>
@@ -562,6 +604,23 @@
 <!-- OWN JS -->
 <script src="js/contact/contact_me.js"></script>
 <script src="js/custom.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'UA-102678285-1', 'auto');
+  ga('send', 'pageview');
+</script>
 
 </body>
 </html>

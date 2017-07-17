@@ -1,3 +1,15 @@
+# 0.12.0(17-07-2017)
+
+### Features
+
+* **progressive**: add necessary files.
+* **seo**: add google analytics.
+* **seo**: add files to a better search index.
+
+### Bug Fixed
+
+* **responsive**: let it resize on mobile devices.
+
 # 0.11.0(14-07-2017)
 
 ### Features
