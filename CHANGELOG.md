@@ -1,3 +1,9 @@
+# 0.14.0(17-07-2017)
+
+### Features
+
+* **sitemap**: add sitemap to the site.
+
 # 0.13.0(17-07-2017)
 
 ### Features
