@@ -1,8 +1,14 @@
+# 0.11.0(14-07-2017)
+
+### Features
+
+* **lint**: add  gulp-w3cjs and added to gulp deploy workflow.
+
 # 0.10.0(14-07-2017)
 
 ### Features
 
-* **minify**: add gulp-imagemin to imagemin optimizer.
+* **minify**: add gulp-imagemin to images optimizer.
 
 # 0.9.1(14-07-2017)
 
