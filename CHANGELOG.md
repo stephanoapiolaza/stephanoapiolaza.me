@@ -1,3 +1,13 @@
+# 0.15.1(17-07-2017)
+
+### Features
+
+* **bing-seo**: add meta for seo on bing.
+
+### Bug Fixed
+
+* **move**: sitemap.xml in app.
+
 # 0.14.0(17-07-2017)
 
 ### Features
