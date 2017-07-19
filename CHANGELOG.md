@@ -1,3 +1,10 @@
+# 0.15.2(199-07-2017)
+
+### Bug Fixed
+
+* **gulp**: add config files to task gulp´lint.
+* **editor-config**: add config to integrate with editor text
+
 # 0.15.1(17-07-2017)
 
 ### Features
