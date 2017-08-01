@@ -16,7 +16,7 @@ const AUTOPREFIXER_BROWSERS = [
 
 module.exports.manualRegister = function (gulp, config) {
     gulp.task('sass', function () {
-        return gulp.src(`${config.paths.src}/${config.globs.scss}`, { base: `${config.paths.scss}`})
+        return gulp.src(`${config.paths.scss}/${config.globs.scss}`)
             .pipe(sass({
               precision: 10
             }).on('error', sass.logError))

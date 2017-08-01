@@ -10,8 +10,7 @@ const options = {
   removeRedundantAttributes: true,
   removeEmptyAttributes: true,
   removeScriptTypeAttributes: true,
-  removeStyleLinkTypeAttributes: true,
-  removeOptionalTags: true
+  removeStyleLinkTypeAttributes: true
 };
 
 module.exports.manualRegister = function (gulp, config) {

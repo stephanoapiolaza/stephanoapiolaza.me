@@ -1,8 +1,10 @@
 {
   "paths": {
     "src": "./app",
+    "media": "./app/media",
     "build": "./build",
     "buildCss": "./build/css",
+    "buildMedia": "./build/media",
     "temp": "./.tmp",
     "scss": "./app/scss",
     "js": "./app/js"

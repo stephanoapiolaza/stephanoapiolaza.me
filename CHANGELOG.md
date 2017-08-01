@@ -1,4 +1,13 @@
-# 0.15.2(199-07-2017)
+# 0.15.3(01-08-2017)
+
+### Bug Fixed
+
+* **compress.css**: improve set import.
+* **scss**: improve transpile css.
+* **index**: improve bing-seo.
+* **pagespeed**: improve platform´s score.
+
+# 0.15.2(19-07-2017)
 
 ### Bug Fixed
 

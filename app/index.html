@@ -55,14 +55,8 @@
   <!-- humans look http://humanstxt.org/ -->
   <link type="text/plain" rel="author" href="http://stephanoapiolaza.me/humans.txt"/>
 
-  <link rel="stylesheet" type="text/css" href="css/master.css"/>
-
 </head>
 <body>
-
-<!-- Loader -->
-<div id="page-preloader"><span class="spinner"></span></div>
-<!-- Loader end -->
 
 <!-- Header -->
 <header class="header header-home">
@@ -73,7 +67,7 @@
           <div class="header-avatar">
             <img src="media/first-screen/stephanoapiolaza.jpg" alt="Foto de Perfil">
           </div>
-          <span class="point">Stephano Apiolaza</span>
+          <span class="point">Stephano</span>
         </a>
       </div>
       <div class="col-md-9 text-right hidden-sm hidden-xs">
@@ -577,53 +571,58 @@
 </div>
 <!-- Modal send message -->
 
-<script src="assets/jquery/jquery-2.2.3.min.js"></script>
-<script src="assets/bootstrap/bootstrap.min.js"></script>
+<script src="assets/jquery/jquery-2.2.3.min.js" async></script>
+<script src="assets/bootstrap/bootstrap.min.js" async></script>
 
-<script src="assets/jquery-placeholder/jquery.placeholder.min.js"></script>
+<script src="assets/jquery-placeholder/jquery.placeholder.min.js" async></script>
 
 <!--Isotope-->
-<script src="assets/isotope/imagesloaded.pkgd.min.js"></script>
-<script src="assets/isotope/isotope.pkgd.min.js"></script>
+<script src="assets/isotope/imagesloaded.pkgd.min.js" async></script>
+<script src="assets/isotope/isotope.pkgd.min.js" async></script>
 
 <!--Gradient-->
-<script src="js/gradient/gradient.js"></script>
+<script src="js/gradient/gradient.js" async></script>
 
 <!--jquery.custom-scroll-->
-<script src="assets/jquery.mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/jquery.mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js" async></script>
 
 <!--social likes-->
-<script src="assets/social-likes/social-likes.min.js"></script>
+<script src="assets/social-likes/social-likes.min.js" async></script>
 
 <!--Smooth Scroll-->
-<script src="assets/smoothscroll-for-websites/SmoothScroll.js"></script>
+<script src="assets/smoothscroll-for-websites/SmoothScroll.js" async></script>
 
 <!--jqBootstrapValidation-->
-<script src="assets/contact/jqBootstrapValidation.js"></script>
+<script src="assets/contact/jqBootstrapValidation.js" async></script>
 
 <!--THEME-->
-<script src="js/theme.js"></script>
+<script src="js/theme.js" async></script>
 
 <!-- OWN JS -->
-<script src="js/contact/contact_me.js"></script>
-<script src="js/custom.js"></script>
+<script src="js/contact/contact_me.js" async></script>
+<script src="js/custom.js" async></script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
 <script>
-  (function (i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r;
-    i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date();
-    a = s.createElement(o),
-      m = s.getElementsByTagName(o)[0];
-    a.async = 1;
-    a.src = g;
-    m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-  ga('create', 'UA-102678285-1', 'auto');
-  ga('send', 'pageview');
+  // miss cache GA by pagespeed
+  if(navigator.userAgent.indexOf("Speed Insights") == -1) {
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-102678285-1', 'auto');
+    ga('send', 'pageview');
+  }
 </script>
 
 </body>
 </html>
+<!-- custom css -->
+<link rel="stylesheet" type="text/css" href="css/master.css"/>
