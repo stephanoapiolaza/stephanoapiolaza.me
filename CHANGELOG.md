@@ -1,3 +1,9 @@
+# 0.15.4(01-08-2017)
+
+### Bug Fixed
+
+* **index**: set master.css in head.
+
 # 0.15.3(01-08-2017)
 
 ### Bug Fixed
