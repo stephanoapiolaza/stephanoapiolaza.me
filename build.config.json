@@ -4,6 +4,7 @@
     "media": "./app/media",
     "build": "./build",
     "buildCss": "./build/css",
+    "buildJs": "./build/js",
     "buildMedia": "./build/media",
     "temp": "./.tmp",
     "scss": "./app/scss",
@@ -11,24 +12,19 @@
   },
   "package": {
     "path": "./build",
-    "name": "production.zip"
+    "name": "production.zip",
+    "css": {
+      "name": "master.css"
+    },
+    "js": {
+      "name": "master.js"
+    }
   },
   "buildExts": "js,css",
-  "vendor" : {
-    "name" : "vendor",
-    "polyfills" : [
-      "node_modules/core-js/client/shim.min.js",
-      "node_modules/zone.js/dist/zone.js",
-      "node_modules/reflect-metadata/Reflect.js",
-      "node_modules/systemjs/dist/system.src.js"
-    ],
-    "thidLibraries" : [
-      "node_modules/rxjs/**/*",
-      "node_modules/@stephanoapiolaza/**/*",
-      "node_modules/dragula/**/*",
-      "node_modules/ng2-dragula/**/*",
-      "node_modules/dom-autoscroller/**/*"
-    ],
-    "core" : [ "node_modules/@angular/**/*" ]
+  "vendor": {
+    "name": "vendor",
+    "polyfills": [],
+    "thidLibraries": [],
+    "core": []
   }
 }

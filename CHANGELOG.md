@@ -1,3 +1,17 @@
+# 0.15.5(15-08-2017)
+
+### Features 
+
+* **gulp-copy**: improve vendor build.
+* **rename**: set <code>media/first-screen to media/me</code>.
+* **rename**: set <code>js/contact/contact_me to js/contact/contact-me</code>.
+
+### Bug Fixed
+
+* **npm**: add gulp-cache plugin.
+* **build.config.json**: delete useless import files (core,polyfills,thirdLibraries).
+* **script**: only async custom.
+
 # 0.15.4(01-08-2017)
 
 ### Bug Fixed

@@ -33,8 +33,7 @@ module.exports.manualRegister = function (gulp, config) {
 			.pipe(concat('vendors.min.js'))
 			.pipe(uglify())
 			.pipe(gulp.dest(`${config.paths.build}/${config.vendor.name}`));
-		gulp.src(config.vendor.core).pipe(gulp.dest(`${config.paths.build}/${config.vendor.name}/@angular/`));
-		return gulp.src(config.vendor.thidLibraries, { base: "./node_modules/" }).pipe(gulp.dest(`${config.paths.build}/${config.vendor.name}`));
+		return gulp.src([config.vendor.thidLibraries, config.vendor.core], { base: "./node_modules/" }).pipe(gulp.dest(`${config.paths.build}/${config.vendor.name}`));
 	});
 
 	gulp.task('copy:build', gulp.parallel('copy:build:static'));
