@@ -14,7 +14,18 @@
     "path": "./build",
     "name": "production.zip",
     "css": {
-      "name": "master.css"
+      "name": "master.css",
+      "include": [
+        "./build/css/master.css",
+        "./build/assets/material-design-icons/materialdesignicons.min.css",
+        "./build/assets/jquery.mCustomScrollbar/jquery.mCustomScrollbar.css",
+        "./build/assets/bootstrap/bootstrap.min.css",
+        "./build/css/typography.css",
+        "./build/css/theme.css",
+        "./build/css/responsive.css",
+        "./build/css/color.css",
+        "./build/css/custom.css"
+      ]
     },
     "js": {
       "name": "master.js"
