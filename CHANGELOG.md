@@ -1,3 +1,15 @@
+# 0.16.0(11-02-2018)
+
+### Features 
+
+* **gulp.concat**: one master css and js file, set from build.config on <code>package section</code>.
+* **gulp.minJS**: change library (deprecated) to minify javascript files.
+
+### Bug Fix
+
+* **mailing**: let to send email (before doesn´t work).
+* **material.icons**: change routes to load icons on web servers.
+
 # 0.15.5(15-08-2017)
 
 ### Features 

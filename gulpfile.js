@@ -17,17 +17,18 @@ config.globs = {
 loadGulpTasks({path: './gulp-tasks', arguments: [config], gulp});
 
 gulp.task('clean', gulp.parallel('clean'));
-gulp.task('scss', gulp.parallel('sass'));
+gulp.task('sass', gulp.parallel('sass'));
 gulp.task('lint', gulp.parallel('jsLint','cssLint'));
-gulp.task('minify', gulp.parallel('compressJS'));
+gulp.task('jsmin', gulp.parallel('compressJS'));
 gulp.task('htmlmin', gulp.parallel('compressHTML'));
 gulp.task('cssmin', gulp.parallel('compressCSS'));
 gulp.task('imgmin', gulp.parallel('compressImages'));
-gulp.task('clean:minJS', gulp.parallel('clean:minJS'));
-gulp.task('compress', gulp.series('minify', 'clean:minJS', 'htmlmin', 'imgmin', 'cssmin'));
-gulp.task('transform-css', gulp.series('scss'));
+gulp.task('compress', gulp.series('jsmin', 'htmlmin', 'imgmin', 'cssmin'));
+gulp.task('concatCSS', gulp.series('concatCSS'));
+gulp.task('concatJS', gulp.series('concatJS'));
+gulp.task('concat', gulp.series('concatCSS', 'concatJS'));
 gulp.task("package", gulp.series("zip"));
-gulp.task('default', gulp.series('clean', gulp.parallel('transform-css', 'copy:build')));
+gulp.task('default', gulp.series('clean', gulp.parallel('sass', 'copy:build'), 'concat'));
 
 gulp.task('start', gulp.series('default', 'lint', 'serve', 'watch'));
 gulp.task('serve', gulp.series('serve', 'watch'));
