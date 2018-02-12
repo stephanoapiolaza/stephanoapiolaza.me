@@ -28,14 +28,29 @@
       ]
     },
     "js": {
-      "name": "master.js"
+      "name": "master.js",
+      "include": [
+        "./build/js/master.js",
+        "./build/assets/jquery/jquery-2.2.3.min.js",
+        "./build/assets/jquery.mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js",
+        "./build/assets/bootstrap/bootstrap.min.js",
+        "./build/assets/jquery-placeholder/jquery.placeholder.min.js",
+        "./build/assets/isotope/imagesloaded.pkgd.min.js",
+        "./build/assets/isotope/isotope.pkgd.min.js",
+        "./build/js/gradient/gradient.js",
+        "./build/assets/social-likes/social-likes.min.js",
+        "./build/assets/smoothscroll-for-websites/SmoothScroll.js",
+        "./build/assets/contact/jqBootstrapValidation.js",
+        "./build/js/theme.js",
+        "./build/js/contact/contact-me.js"
+      ]
     }
   },
   "buildExts": "js,css",
   "vendor": {
     "name": "vendor",
     "polyfills": [],
-    "thidLibraries": [],
+    "thirdLibraries": [],
     "core": []
   }
 }
